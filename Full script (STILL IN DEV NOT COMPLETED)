@@ -203,10 +203,18 @@ end)
 
 task.spawn(function()
     while true do
-        task.wait(math.random(400, 600))
+        task.wait(math.random(300, 600))
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/VHS%20sans")
     end
 end)
+
+task.spawn(function()
+    while true do
+        task.wait(math.random(400, 700))
+        s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/A-200")
+    end
+end)
+
 
 
 
