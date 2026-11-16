@@ -186,7 +186,7 @@ end
 ---====== entity attack loops ======---
 task.spawn(function()
     while true do
-        task.wait(math.random(100, 200))
+        task.wait(math.random(75, 190))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/depth")
     end
@@ -194,7 +194,7 @@ end)
 
 task.spawn(function()
     while true do
-        task.wait(math.random(200, 500))
+        task.wait(math.random(200, 400))
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Trauma%20Phase%202")
     end
 end)
