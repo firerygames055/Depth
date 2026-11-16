@@ -131,13 +131,13 @@ entity:SetCallback("OnDamagePlayer", function(newHealth)
 		image.Size = UDim2.new(0, 5, 0, 5)
 		image.LayoutOrder = 0
 		image.BorderSizePixel = 0
-		image.Image = "http://www.roblox.com/asset/?id=11278229112"
+		image.Image = "rbxassetid://115785000365211"
 		image.Rotation = 0
 
 		-- flash màu background như bạn
 		task.spawn(function()
 			while background and background.Parent do
-				background.BackgroundColor3 = Color3.fromRGB(0, 17, 255)
+				background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 				task.wait(0.08)
 				if not background or not background.Parent then break end
 				background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
