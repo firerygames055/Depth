@@ -1,3 +1,11 @@
+---====== wait until the dor is opened ======---
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+---====== one time achievemnt lock ======---
+if workspace:GetAttribute("DepthAchievementExecuted") then
+    return
+end
+
+workspace:SetAttribute("DepthAchievementExecuted", true)
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
