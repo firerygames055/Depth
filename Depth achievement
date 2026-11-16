@@ -13,6 +13,6 @@ local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.
 achievementGiver({
     Title = "Finally free!",
     Desc = "Encounter depth",
-    Reason = "Survive septh",
+    Reason = "Survive depth",
     Image = "rbxassetid://104406289486011"
 })
