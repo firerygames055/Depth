@@ -1,3 +1,5 @@
+---====== old seek ======---
+loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Old%20seek%20credits%20to%20StovenChaos"))()
 --==================================================
 -- FLOOR 2 REMAKE - FULL MERGED SCRIPT (TEXT AUTO HIDE)
 --==================================================
@@ -168,11 +170,11 @@ end)
 ---====== create text ======---
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors hard mode is now active!", true)
-wait(3)
+wait(4)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed by noob_playzz", true)
-wait(3)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits to to Jun for the floor 2 theme and the guiding light candle", true)
-wait(3)
+wait(4)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits to to Jun for the floor 2 theme and the guiding light candle and StovenChaos for old seek", true)
+wait(4)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("I know yall missed this mode", true)
 
 ---====== define S_load ======---
