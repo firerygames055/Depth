@@ -166,6 +166,7 @@ task.spawn(function()
 end)
 
 ---====== create text ======---
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors hard mode is now active!", true)
 wait(3)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed by noob_playzz", true)
