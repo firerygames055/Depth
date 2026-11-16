@@ -1,3 +1,5 @@
+---====== load trauma's 1st phase ======---
+loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Trauma%20Phase%201"))()
 ---====== old seek ======---
 loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Old%20seek%20credits%20to%20StovenChaos"))()
 --==================================================
