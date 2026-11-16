@@ -13,7 +13,7 @@ local entity = spawner.Create({
     Lights = {
         Flicker = {
             Enabled = false,
-            Duration = 1
+            Duration = 7
         },
         Shatter = false,
         Repair = false
@@ -23,7 +23,7 @@ local entity = spawner.Create({
     },
     CameraShake = {
         Enabled = true,
-        Range = 40
+        Range = 100,
         Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
     },
     Movement = {
@@ -51,7 +51,7 @@ local entity = spawner.Create({
     },
     Death = {
         Type = "Guiding", -- "Curious"
-        Hints = {"You died to Trauma", "This entity has no pattern and will spawn randomly after it's initial spawn", "He is also quite fast", "Hide when he does this!"},
+        Hints = {"You died to Trauma", "This entity has no pattern and will spawn randomly throughout the hotel", "Hide when it does this!", "Good luck"},
         Cause = "Trauma"
     }
 })
@@ -60,6 +60,25 @@ local entity = spawner.Create({
 
 entity:SetCallback("OnSpawned", function()
     print("Entity has spawned")
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Name = "spawn"
+    sound.Volume = 13
+   sound:Play()
+end
+
+CustomGitSound("", 1, " spawn")
+
 end)
 
 entity:SetCallback("OnStartMoving", function()
@@ -79,6 +98,7 @@ entity:SetCallback("OnLookAt", function(lineOfSight)
 		print("Player is looking at entity")
 	else
 		print("Player view is obstructed by something")
+
 	end
 end)
 
@@ -101,9 +121,10 @@ end)
 entity:SetCallback("OnDamagePlayer", function(newHealth)
     if newHealth == 0 then
         print("Entity has killed the player")
+
     else
         print("Entity has damaged the player")
-        replicatesignal(game.Players.LocalPlayer.Kill)
+    replicatesignal(game.Players.LocalPlayer.Kill)
     end
 end)
 
