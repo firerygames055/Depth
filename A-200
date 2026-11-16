@@ -51,7 +51,7 @@ local entity = spawner.Create({
 	},
 	Death = {
 		Type = "Guiding", -- "Curious"
-		Hints = {"You died to an entity known as A-200", ""It will rebound six times after flickering the lights for 9 seconds", "Hide when this happens!", "And most people though A-200 just stays at a side of the room and does nothing but it was supposed to be a running type entity but due to glitches it always got stuck"},
+		Hints = {"You died to an entity known as A-200", "It will rebound six times after flickering the lights for 9 seconds", "Hide when this happens!", "And most people though A-200 just stays at a side of the room and does nothing but it was supposed to be a running type entity but due to glitches it always got stuck"},
 		Cause = "A-200"
 	}
 })
