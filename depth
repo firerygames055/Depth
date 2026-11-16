@@ -206,3 +206,6 @@ end)
 ---====== Run entity ======---
 
 entity:Run()
+
+---====== Depths Achievement ======---
+loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Depth%20achievement"))()
