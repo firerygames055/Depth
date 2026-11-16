@@ -12,8 +12,8 @@ local entity = spawner.Create({
     },
     Lights = {
         Flicker = {
-            Enabled = false,
-            Duration = 1
+            Enabled = true,
+            Duration = 9
         },
         Shatter = true,
         Repair = false
@@ -27,21 +27,21 @@ local entity = spawner.Create({
         Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
     },
     Movement = {
-        Speed = 106,
-        Delay = 4,
+        Speed = 250,
+        Delay = 2,
         Reversed = true
     },
     Rebounding = {
-        Enabled = false,
+        Enabled = true,
         Type = "Ambush", -- "Blitz"
-        Min = 1,
-        Max = 1,
+        Min = 6,
+        Max = 6,
         Delay = 2
     },
     Damage = {
         Enabled = true,
         Range = 40,
-        Amount = 0.01
+        Amount = 125
     },
     Crucifixion = {
         Enabled = true,
@@ -51,8 +51,8 @@ local entity = spawner.Create({
     },
     Death = {
         Type = "Guiding", -- "Curious"
-        Hints = {"You die to perator", "When it appears there will be a rather small sound.", "he will spawn in front", "good luck"},
-        Cause = ""
+        Hints = {"You died to an entity known as A-200", "It will rebound six times after flickering the lights for 9 seconds", "Hide when this happens!", "And most people though A-200 just stays at a side of the room and does nothing but it was supposed to be a running type entity but due to glitches it always got stuck"},
+        Cause = "A-200"
     }
 })
 
@@ -77,7 +77,7 @@ function CustomGitSound(soundlink, vol, filename)
    sound:Play()
 end
 
-CustomGitSound("https://github.com/eoyoustme2/dm123/blob/main/PredatorSpawnSound.mp3?raw=true", 1, " spawn")
+CustomGitSound("", 1, " spawn")
 
 end)
 
