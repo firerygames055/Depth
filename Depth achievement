@@ -14,5 +14,5 @@ achievementGiver({
     Title = "Finally free!",
     Desc = "Encounter depth",
     Reason = "Survive septh",
-    Image = "https://github.com/MuhXd/DoorSuff/blob/main/DoorsModes/Png.png?raw=true"
+    Image = "rbxassetid://104406289486011"
 })
