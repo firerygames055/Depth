@@ -177,7 +177,7 @@ end)
 
 task.spawn(function()
     while true do
-        task.wait(math.random(200, 400))
+        task.wait(math.random(300, 500))
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Trauma%20Phase%202")
     end
 end)
