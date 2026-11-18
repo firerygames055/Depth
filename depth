@@ -131,7 +131,7 @@ entity:SetCallback("OnDamagePlayer", function(newHealth)
 		image.Size = UDim2.new(0, 5, 0, 5)
 		image.LayoutOrder = 0
 		image.BorderSizePixel = 0
-		image.Image = "http://www.roblox.com/asset/?id=11278229112"
+		image.Image = "rbxassetid://11278229112"
 		image.Rotation = 0
 
 		-- flash màu background như bạn
