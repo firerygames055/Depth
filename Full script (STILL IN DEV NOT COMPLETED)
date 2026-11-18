@@ -1,19 +1,12 @@
+---====== sprint ======---
+loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/doors-fragmented-mode-updated-sprint/refs/heads/main/fragmented%20mode%20updated%20sprint"))()
 ---====== old seek ======---
 loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Old%20seek%20credits%20to%20StovenChaos"))()
---==================================================
--- FLOOR 2 REMAKE - FULL MERGED SCRIPT (TEXT AUTO HIDE)
---==================================================
-
---==================================================
 --Load Map Floor 2
---==================================================
 task.spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Floor-2/refs/heads/main/Floor-2-mapp"))()
 end)
-
---==================================================
--- Script 2: Lighting + Fog
---==================================================
+-- Lighting & Fog
 task.spawn(function()
     local Lighting = game:GetService("Lighting")
 
@@ -51,10 +44,7 @@ task.spawn(function()
     colorCorrection.Contrast = 0.1
     colorCorrection.Saturation = -0.05
 end)
-
---==================================================
--- Script 3: Background Sound
---==================================================
+-- Background Sound
 task.spawn(function()
     local cue2 = Instance.new("Sound")
     cue2.Parent = workspace
@@ -65,14 +55,11 @@ task.spawn(function()
     cue2.Looped = true
     cue2:Play()
 end)
-
---==================================================
--- Script 4: Door Color Classification
---==================================================
+-- Door Color Classification
 task.spawn(function()
     local Color_MainDoor = Color3.fromRGB(141, 123, 110)
     local Color_SideDoor = Color3.fromRGB(60, 60, 60)
-    local DoorMaterial = Enum.Material.Limestone
+    local DoorMaterial = Enum.Material.Slate
 
     local function DoorHasNumber(door)
         for _, obj in pairs(door:GetDescendants()) do
@@ -115,17 +102,11 @@ task.spawn(function()
         ConvertRoom(room)
     end
 end)
-
---==================================================
--- Script 5: Guiding Light Candle
---==================================================
+-- Guiding Light Candle
 task.spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guiding-light-candle/refs/heads/main/Candle"))()
 end)
-
---==================================================
--- Script 6: Floor 2 Text (Show once → Fade out → Remove)
---==================================================
+-- Doors hard mode activated text
 task.spawn(function()
     local Players = game:GetService("Players")
     local TweenService = game:GetService("TweenService")
@@ -152,10 +133,10 @@ task.spawn(function()
     text.TextXAlignment = Enum.TextXAlignment.Center
     text.TextYAlignment = Enum.TextYAlignment.Center
 
-    -- ⏳ Thời gian hiện
+-- wait before fade out
     task.wait(3)
 
-    -- 🌫 Fade out
+-- Fade out
     local tween = TweenService:Create(
         text,
         TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
@@ -173,7 +154,7 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
 wait(4)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fixed by noob_playzz", true)
 wait(4)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits to to Jun for the floor 2 theme and the guiding light candle and StovenChaos for old seek", true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits to to Jun for the guiding light candle and StovenChaos for old seek", true)
 wait(4)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("I know yall missed this mode", true)
 
@@ -188,7 +169,7 @@ end
 ---====== entity attack loops ======---
 task.spawn(function()
     while true do
-        task.wait(math.random(75, 190))
+        task.wait(math.random(20, 150))
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/depth")
     end
@@ -203,23 +184,16 @@ end)
 
 task.spawn(function()
     while true do
-        task.wait(math.random(300, 600))
+        task.wait(math.random(400, 700))
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/VHS%20sans")
     end
 end)
 
 task.spawn(function()
     while true do
-        task.wait(math.random(400, 700))
+        task.wait(math.random(300, 600))
         s_Load("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/A-200")
     end
 end)
-
 ---====== load trauma's first face ======---
 loadstring(game:HttpGet("https://raw.githubusercontent.com/firerygames055/Doors-hard-mode-Fixed/refs/heads/main/Trauma%20Phase%201"))()
-
-
-
-
-
-
